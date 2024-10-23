@@ -1,0 +1,143 @@
+/* Général */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./Ressource/pexels-enginakyurt-1435895.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Image de cuisine */
+#header-image {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid black;
+}
+
+/* Section des ingrédients */
+#ingredients-section {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#ingredients-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: rgba(238, 241, 213, 0.9);
+}
+
+/* Cache les cases à cocher */
+#ingredients-list input[type="checkbox"] {
+    display: none;
+}
+
+/* Icône d'ingrédient par défaut (grisée) */
+.ingredient-icon {
+    width: 100px; /* Ajuste la taille selon tes besoins */
+    height: 100px;
+    filter: grayscale(100%); /* Icône grisée par défaut */
+    transition: filter 0.3s ease; /* Transition douce pour l'effet */
+    cursor: pointer;
+}
+
+/* Lorsque la case à cocher est cochée, l'icône devient normale */
+#ingredients-list input[type="checkbox"]:checked + img.ingredient-icon {
+    filter: grayscale(0%); /* Retire l'effet de gris */
+}
+/* Champ de recherche */
+#search-button-container {
+    width: 80%;
+    margin: 20px 0;
+    text-align: center;
+    position: relative;
+
+}
+
+#recipe-search {
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    font-size: 1.2em;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(255, 163, 163);
+    font-size: 35px;
+}
+
+#results-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 10;
+}
+
+/* Section des recettes */
+#recipes-section {
+    width: 90%;
+    margin: 20px auto;
+}
+
+#recipes-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.recipe-card {
+    background-color: white;
+    border: 2px solid black;
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.recipe-card h3 {
+    background-color: #ccc;
+    padding: 10px;
+    border-bottom: 2px solid black;
+}
+
+.recipe-card p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #ingredients-list {
+        flex-direction: column;
+    }
+
+    .recipe-card {
+        width: 100%;
+    }
+}
