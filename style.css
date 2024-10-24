@@ -20,16 +20,19 @@ body {
 }
 
 header {
-    width: 100%;
+    width:200px;
+    height: 150px;
     text-align: center;
     margin-bottom: 20px;
+    border-radius: 0% 0% 20px 20px;
+    background-color: #cd5b6b;
 }
 
 /* Image de cuisine */
 #header-image {
     max-width: 100%;
-    height: auto;
-    border: 2px solid black;
+    height: 100%;
+    
 }
 
 /* Section des ingrédients */
@@ -80,7 +83,7 @@ header {
     height: 70px;
     padding: 10px;
     font-size: 1.2em;
-    border: 2px solid #ccc;
+    border: 2px solid #b98b8b;
     border-radius: 5px;
     background-color: rgb(255, 163, 163);
     font-size: 35px;

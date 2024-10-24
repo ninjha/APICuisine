@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
       checkbox.checked = false; // Réinitialise chaque case à cocher
     });
   };
-
   // Appel de la fonction pour réinitialiser les cases à cocher au chargement
   resetFormOnLoad();
 
@@ -74,6 +73,11 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   };
   const srcBtn = document.querySelector("#search-button");
+  const srcForm = document.querySelector("#recipe-search");
+
+  srcForm.addEventListener("input", function () {
+    const apiUrlSug = `https://api.spoonacular.com/recipes/autocomplete?number=10&query=chick`;
+  });
 
   srcBtn.addEventListener("click", function () {
     searchRecipesByIngredients();
