@@ -76,6 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const srcForm = document.querySelector("#recipe-search");
 
   srcForm.addEventListener("input", function () {
+    let isWriting = true;
     const apiUrlSug = `https://api.spoonacular.com/recipes/autocomplete?number=10&query=chick`;
   });
 

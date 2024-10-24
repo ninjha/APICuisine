@@ -83,9 +83,9 @@ header {
     height: 70px;
     padding: 10px;
     font-size: 1.2em;
-    border: 2px solid #1b52eb;
+    border: 2px solid #a8476c;
     border-radius: 5px;
-    background-color: rgb(172, 29, 29);
+    background-color: rgba(214, 93, 93, 0.795);
     font-size: 35px;
 }
 
