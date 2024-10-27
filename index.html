@@ -4,82 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recherche de Recettes</title>
-    <link rel="stylesheet" href="style.css"> <!-- Lien vers ton fichier CSS -->
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
 
     <header>
         <!-- Image d'illustration -->
-        <img src="image.jpg" alt="Image de cuisine" id="header-image">
+        <img src="./Ressource/Icone/chapeau-de-chef.png" alt="Image de cuisine" id="header-image">
     </header> 
-
     <!-- Liste d'ingrédients -->
     <section id="ingredients-section">
         <h2>Liste d'ingrédients</h2>
         <div id="ingredients-list">
             <label>
-                <input type="checkbox" name="ingredient" value="poulet">
+                <input type="checkbox" name="ingredient" value="chicken">
                 <img src="./Ressource/Icone/chicken.png" alt="chicken" class="ingredient-icon">
             </label>
             
             <label>
-                <input type="checkbox" name="ingredient" value="boeuf">
+                <input type="checkbox" name="ingredient" value="meat">
                 <img src="./Ressource/Icone/meat.png" alt="meat" class="ingredient-icon">
             </label>
             
             <label>
-                <input type="checkbox" name="ingredient" value="poisson">
+                <input type="checkbox" name="ingredient" value="fish">
                 <img src="./Ressource/Icone/fish.png" alt="fish" class="ingredient-icon">
             </label>
             
             <label>
-                <input type="checkbox" name="ingredient" value="oeuf">
+                <input type="checkbox" name="ingredient" value="egg">
                 <img src="./Ressource/Icone/egg.png" alt="egg" class="ingredient-icon">
             </label>
             
             <label>
-                <input type="checkbox" name="ingredient" value="oignon">
+                <input type="checkbox" name="ingredient" value="onion">
                 <img src="./Ressource/Icone/onion.png" alt="onion" class="ingredient-icon">
             </label>
             
             <label>
-                <input type="checkbox" name="ingredient" value="ail">
+                <input type="checkbox" name="ingredient" value="garlic">
                 <img src="./Ressource/Icone/garlic.png" alt="garlic" class="ingredient-icon">
             </label>
             
             <label>
-                <input type="checkbox" name="ingredient" value="piment">
+                <input type="checkbox" name="ingredient" value="chilli">
                 <img src="./Ressource/Icone/chilli.png" alt="chilli" class="ingredient-icon">
             </label>
             
             <label>
-                <input type="checkbox" name="ingredient" value="legumes">
+                <input type="checkbox" name="ingredient" value="vegetable">
                 <img src="./Ressource/Icone/vegetable.png" alt="vegetable" class="ingredient-icon">
             </label>
             
             <label>
-                <input type="checkbox" name="ingredient" value="fromage">
+                <input type="checkbox" name="ingredient" value="cheese">
                 <img src="./Ressource/Icone/cheese.png" alt="cheese" class="ingredient-icon">
             </label>
             
             <label>
-                <input type="checkbox" name="ingredient" value="pates">
+                <input type="checkbox" name="ingredient" value="pasta">
                 <img src="./Ressource/Icone/pasta.png" alt="pasta" class="ingredient-icon">
             </label>
             
             <label>
-                <input type="checkbox" name="ingredient" value="riz">
+                <input type="checkbox" name="ingredient" value="rice">
                 <img src="./Ressource/Icone/rice.png" alt="rice" class="ingredient-icon">
             </label>
         </div>
     </section>
 
+    <div id="search-button">
+        <button id="srch-btn">
+            Recherche recette
+        </button>
+    </div>
     <!-- Champ de recherche -->
     <div id="search-button-container">
-        <input type="text" id="recipe-search" placeholder="Rechercher une recette..." autocomplete="off">
+        <input type="text" id="recipe-search" placeholder="Rechercher une recette..." autocomplete="on">
         <div id="results-container"></div>
     </div>
-
+    
     <!-- Résultats des recettes -->
     <section id="recipes-section">
         <h2>Recettes trouvées</h2>
